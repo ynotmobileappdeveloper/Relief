@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ynot.relief">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory"
+        tools:targetApi="p">
+        <activity
+            android:name=".OrderBillView"
+            android:label="Bill view"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".ImageCropper"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+
+        <activity
+            android:name=".MyOrderDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity android:name=".NonMedicalProducts" />
+        <activity
+            android:name=".CartActivity"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".UploadActivity"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".TestResultDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MyCheckups"
+            android:theme="@style/AppTheme.NoActionBar.OrderSuccesPage" />
+        <activity
+            android:name=".PrescriptionDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".RecentDoc"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".DocMedicineDetail"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MedicineTabbed"
+            android:label="@string/title_activity_medicine_tabbed"
+            android:theme="@style/AppTheme.NoActionBar.OrderSuccesPage" />
+        <activity
+            android:name=".LabStatusPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".ViewMyMedicine"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".TestDetail"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MyLabTests"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MyConsulting"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".CheckupPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".PrescriptionTest"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".LocationPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MyAppoinmentsDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MyAppoinments"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".AppointmentBooking"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".DocDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".DoctorsList"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".TypeAMedicine"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".SearchTypeAMedicine"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".EnquiryPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".BillView"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".NurseBooking"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".NurseDetailPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MyPrescription"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".AllProducts"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".OrderPageSuccess"
+            android:theme="@style/AppTheme.NoActionBar.OrderSuccesPage" />
+        <activity
+            android:name=".ProfilePage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".EmptyActivity"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MyOrders"
+            android:theme="@style/AppTheme.NoActionBar.home" /> <!-- <activity -->
+        <!-- android:name="com.yalantis.ucrop.UCropActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".MyMedicine"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".AddAddress"
+            android:theme="@style/AppTheme.NoActionBar.home"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddressPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".CheckoutPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".ProductDetail"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".ProductPage"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".PharmacyDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".RegistrationPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MedicinesPage"
+            android:label="Medicines" />
+        <activity
+            android:name=".DistributorsRegisteration"
+            android:label="@string/dis_title"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PharamacyRegistration"
+            android:label="@string/pharm_titile"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LaboratoryRegistration"
+            android:label="@string/lab_titile"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DoctorRegistration"
+            android:label="@string/doctors_titile"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Otpverify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Sendmobile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SliderPage"
+            android:theme="@style/AppTheme.NoActionBar.Sliderpage" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar.home"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ynot.relief.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

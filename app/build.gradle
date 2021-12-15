@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        applicationId "com.ynot.relief"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 7
+        versionName "1.7"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    allprojects {
+        repositories {
+
+            maven {
+                url "https://jitpack.io"
+            }
+
+        }
+
+    }
+    compileOptions {
+        // Flag to enable support for the new language APIs
+//        coreLibraryDesugaringEnabled true
+        // Sets Java compatibility to Java 8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    ndkVersion '23.0.7123448 rc1'
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.github.mabbas007:TagsEditText:1.0.5'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.tapadoo.android:alerter:1.0.4'
+    implementation 'com.irozon.sneaker:sneaker:2.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.mabbas007:TagsEditText:1.0.5'
+    implementation 'com.facebook.android:facebook-applinks:5.15.3'
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'cc.cloudist.acplibrary:library:1.2.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

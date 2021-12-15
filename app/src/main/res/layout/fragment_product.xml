@@ -1,0 +1,138 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ynot.relief.ui.CategoryFragment.CategoryFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Purchase"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/type"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Your Medicines"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView
+                android:src="@drawable/ic_search"
+                android:layout_width="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+        <Button
+            android:id="@+id/upload"
+            android:layout_marginTop="15dp"
+            android:text="Upload prescription"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="40dp"
+            android:drawableRight="@drawable/ic_camera_button"
+            android:background="@drawable/proceed_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <Button
+            android:id="@+id/type_medicine"
+            android:layout_marginTop="15dp"
+            android:text="Type your medicine"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/proceed_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:id="@+id/nodata"
+            android:padding="120dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_product" />
+        <LinearLayout
+            android:id="@+id/near_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="Near Medical Store"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shop_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

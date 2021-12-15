@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/close"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="MEDICINE DETAILS" />
+
+            <TextView
+                android:id="@+id/medicine_time"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Medicine Time" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/morning"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="Morning" />
+
+                <TextView
+                    android:id="@+id/noon"
+                    android:layout_width="0dp"
+                    android:visibility="invisible"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="Noon" />
+
+                <TextView
+                    android:id="@+id/night"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="Night" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/add_time"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Add Time" />
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="--- : ---" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="Noon"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="Night"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/after"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="After Food" />
+
+
+                <TextView
+                    android:id="@+id/before"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="Before Food" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Qty Tablet / Tonic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:inputType="number"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/nos"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.5"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="Nos" />
+
+                <TextView
+                    android:id="@+id/ml"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.5"
+                    android:visibility="invisible"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="ml" />
+
+                <TextView
+                    android:id="@+id/grm"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:visibility="invisible"
+                    android:background="@drawable/tab_unseleted_back"
+                    android:gravity="center"
+                    android:text="grm" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

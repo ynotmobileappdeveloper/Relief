@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ynot.relief.ui.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home">
+
+        <!-- <action
+             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+             app:destination="@id/nav_home_second" />-->
+    </fragment>
+    <!--<fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.ynot.medico.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>-->
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.ynot.relief.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.ynot.relief.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/doctor_reg"
+        android:name="com.ynot.relief.DoctorRegistration"
+        tools:layout="@layout/activity_doctor_registration" />
+    <activity
+        android:id="@+id/disc_reg"
+        android:name="com.ynot.relief.DistributorsRegisteration"
+        tools:layout="@layout/activity_distributors_registeration" />
+    <activity
+        android:id="@+id/pharm_reg"
+        android:name="com.ynot.relief.PharamacyRegistration"
+        tools:layout="@layout/activity_pharamacy_registration" />
+    <activity
+        android:id="@+id/lab_reg"
+        android:name="com.ynot.relief.LaboratoryRegistration"
+        tools:layout="@layout/activity_laboratory_registration" />
+
+    <fragment
+        android:id="@+id/nav_reg"
+        android:name="com.ynot.relief.ui.RegistrationPage.RegistrationFragment"
+        android:label="Registration"
+        tools:layout="@layout/fragment_registration" />
+
+    <fragment
+        android:id="@+id/nav_pharmacy"
+        android:name="com.ynot.relief.ui.Pharmacy.PharmacyFragment"
+        android:label="Pharmacy"
+        tools:layout="@layout/fragment_pharmacy" />
+
+    <fragment
+        android:id="@+id/nav_doctors"
+        android:name="com.ynot.relief.ui.Doctors.DoctorsFragment"
+        android:label="Doctors"
+        tools:layout="@layout/fragment_doctors" />
+    <fragment
+        android:id="@+id/cat_frag"
+        android:name="com.ynot.relief.ui.CategoryFragment.CategoryFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/product"
+        android:name="com.ynot.relief.ui.Product.ProductFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/cart_frag"
+        android:name="com.ynot.relief.ui.Cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.ynot.relief.ui.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/upolad"
+        android:name="com.ynot.relief.ui.Upload.UploadFragment"
+        android:label="Upload Prescription"
+        tools:layout="@layout/fragment_upload" />
+    <fragment
+        android:id="@+id/nurse_booking"
+        android:name="com.ynot.relief.ui.NurseBooking.NurseFragment"
+        tools:layout="@layout/fragment_nurse" />
+    <fragment
+        android:id="@+id/search_frag"
+        android:name="com.ynot.relief.ui.Search.SearchFragment"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/store_frag"
+        android:name="com.ynot.relief.ui.Store.StoreFragment"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.ynot.relief.ui.Notification.NotificationFragment"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

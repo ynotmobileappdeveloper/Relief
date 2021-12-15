@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Relief</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="doctors_titile">Doctors Registration</string>
+    <string name="dis_title">Distributors Registration</string>
+    <string name="pharm_titile">Pharmacy Registration</string>
+    <string name="myappointments">My Address</string>
+    <string name="lab_titile">Laboratory Registration</string>
+    <string name="orders">My Orders</string>
+    <string name="logout">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">Relief</string>
+    <string name="google_maps_key">AIzaSyAT5JG_9ijuOfjvz9Ng9Wv1JEqRHQeELGg</string>
+    <string name="title_activity_medicine_tabbed">MedicineTabbed</string>
+    <string name="tab_text_1">Doc Prescription</string>
+    <string name="tab_text_2">My Medicine</string>
+    <string name="tab1">Booked Checkups</string>
+    <string name="tab2">Test Results</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

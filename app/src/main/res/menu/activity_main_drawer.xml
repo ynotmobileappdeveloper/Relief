@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/address"
+            android:icon="@drawable/ic_myaddress"
+            android:title="@string/myappointments" />
+        <item
+            android:id="@+id/appointments"
+            android:visible="false"
+            android:icon="@drawable/ic_appointment"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/nav_reg"
+            android:visible="false"
+            android:icon="@drawable/ic_registration"
+            android:title="Registrations" />
+        <item
+            android:id="@+id/orders"
+            android:icon="@drawable/ic_request"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/documents"
+            android:icon="@drawable/ic_note"
+            android:title="My Prescription orders" />
+
+        <!--   <item
+               android:id="@+id/medical_records"
+               android:icon="@drawable/ic_medical_record"
+               android:title="@string/medical_records" />-->
+
+        <item
+            android:id="@+id/call"
+            android:icon="@drawable/ic_tollfree"
+            android:title="Call for support" />
+        <item
+            android:id="@+id/whatsapp"
+            android:icon="@drawable/ic_whatsapp_lite"
+            android:title="Whatsapp Contact" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+
+    </group>
+</menu>
